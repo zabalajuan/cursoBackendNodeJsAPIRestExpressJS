@@ -4,7 +4,7 @@ const express = require('express'); //importamos express
 const router = express.Router();
 //para trabajar con la libreria faker
 const {faker} = require('@faker-js/faker');
-const e = require('express');
+
 
 //http://localhost:3000/products
 //http://localhost:3000/products?size=2
