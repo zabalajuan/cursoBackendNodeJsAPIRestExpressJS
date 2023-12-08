@@ -1,0 +1,46 @@
+Lo primero es configurar npm en la carpeta del proyecto.
+npm init -y
+
+Iniciamos el repositorio
+git init
+
+Creamos el archivo para el
+.gitignore
+para este archivo podemos usar la pagina
+gitignore.io (Node, Windows, Linux, macOS)
+
+Creamos el archivo para configuración del editor
+.editorconfig
+Para que todos los desarrolladores tengan la misma configuración del editor
+
+Creamos el archivo para todas las reglas de buenas practicas
+.eslintrc.json
+
+EN el archivo de configuracion package.json haremos unas tareas
+1. levantar un entorno de desarrollo
+  "dev": "nodemon index.js"
+  "start": "node index.js"
+  "lint": "eslint"
+
+para que lo anterior funcione, es necesario crear las dependencias de desarrollo
+
+vamos a correr el comando
+npm i nodemon eslint eslint-config-prettier eslint-plugin-prettier prettier -D
+nodemon -> es el servidor de desarrollo
+-D -> este flag indica que son dependencias solo para desarrollo, no para producción
+
+Ya con estas configuraciones:
+Para correr en modo desarrollo, escuchando los cambios
+    npm run dev
+
+Para correr en modo produccion, sin server reload
+    npm run start
+
+Clase 3 - Instalación de Express
+
+Vamos a crear Express como una dependencia de produccion
+    npm i express
+
+
+Libreria para generar fake data
+  npm i @faker-js/faker
