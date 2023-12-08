@@ -44,3 +44,7 @@ Vamos a crear Express como una dependencia de produccion
 
 Libreria para generar fake data
   npm i @faker-js/faker
+
+Simple Responsability Principle
+  Cada artefacto, debe tener una unica responsabilidad
+  generamos la carpeta routes para esto
