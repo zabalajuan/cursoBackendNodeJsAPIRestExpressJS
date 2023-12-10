@@ -48,3 +48,17 @@ Libreria para generar fake data
 Simple Responsability Principle
   Cada artefacto, debe tener una unica responsabilidad
   generamos la carpeta routes para esto
+
+Middlewares
+  Hay un paquete que ayuda a manejar los errores
+  Boom
+    npm i @hapi/boom
+
+
+Validación de datos
+  validar que los datos cumplen con la integridad de datos requerida por la unidad de negocio
+  joi - Libreria
+    npm i joi
+    joi.dev
+Middlewears Populares en Express.js
+    https://platzi.com/new-home/clases/2485-backend-nodejs/41762-middlewares-populares-en-expressjs/
