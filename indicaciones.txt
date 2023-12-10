@@ -62,3 +62,19 @@ Validación de datos
     joi.dev
 Middlewears Populares en Express.js
     https://platzi.com/new-home/clases/2485-backend-nodejs/41762-middlewares-populares-en-expressjs/
+
+Antes de hacer deploy
+  Evaluar Cors Cross-Origin Resource Sharing (CORS)
+    los accesos
+    para este problema tenemos una libreria, Cors
+      npm i cors
+
+  Usar protocolo https
+  Procesos de Build
+    por ejemplo compilacions
+  Remover logs
+  Seguridad
+    Helmet
+      colleccion demiddlewares para Seguridad
+  Testing
+    pruebas unitarias o de integracion
