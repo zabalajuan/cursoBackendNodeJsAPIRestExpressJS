@@ -12,7 +12,8 @@ const {logErrors, errorHandler, boomErrorHandler} = require('./middlewares/error
 //creamos la aplicación
 const app = express(); //metodo constructor
 //en donde queremos que corra la aplicación
-const port = 3000;
+//si el puerto viene de una variable de entorno, se le asigna ese puerto
+const port = process.env.PORT || 3000;
 
 //para poder usar le metodo POST, debemos agregar este middle work
 //con este ajuste ya deberíamos recibir información que llega por POST
