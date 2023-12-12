@@ -78,3 +78,22 @@ Antes de hacer deploy
       colleccion demiddlewares para Seguridad
   Testing
     pruebas unitarias o de integracion
+
+Deploy con vercel
+  La rama en la que debe estar la producción es en Main
+  Si es una API, esta debe estar en una carpeta para la API
+    En esta carpeta debe estar:
+      middlewares
+      routes
+      schemas
+      services
+      el index.js también debe estar en esta carpeta
+    Al hacer estos ajustes, debemos revisar el package.json
+    Todas las rutas deben por obligacion debe estar desplegada con el subdirectorio /api/
+    el puerto debe leerse desde una variable de ambiente
+      const port = process.env.PORT || 3000;
+    Por último, por configuración, se debe agregar un archivo vercel.json
+      vamos a hacer que funcione como un servidor de backend y no de frontend
+        cualquier endpoint que tenga la ruta que le dijimos, sera redirigido a un destino
+
+    Al hacer el commit a la rama master, vercel actualiza
